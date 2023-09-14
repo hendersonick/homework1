@@ -1,5 +1,12 @@
-What is a remote repository?
-	- A remote repository is a repository that exists on a seperate 
-server from your local repository. Remote repos are used for collaboration
-and sharing code with others. They allow multiple developers to push to 
-and pull changes from a shared repo. 
+Git Merge vs Git Rebase:
+
+Both are used to unite a feature branch with the main branch. 
+
+Git Merge:
+- pulls in the latest changes from main into the feature branch, creating a new merge commit in the process. Merging ties the histories of both branches together. 
+- This method preserves the branch's entire history, including the order of changes made on each branch.
+
+Git Rebase:
+- Changes the base of a feature branch to the latest commit on main, and then we place our changes form there. Which gives us a clean straight forward commit history. After finishing developing the feature, we still need to get the feature branch back into the main branch. We can now use Git Merge to integrate the feature branch into the main branch.
+- no need for the unnecessary merge commits required by using git merge.
+- much cleaner results in a perfectly linear project history.
