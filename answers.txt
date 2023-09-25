@@ -18,3 +18,5 @@ from your local repository. Remote repositories are used for collaboration
 and enable developers to share code with others. Remote repos serve as a 
 central point where multiple developers can push their changes to and pull 
 changes from.
+
+(Qed)
